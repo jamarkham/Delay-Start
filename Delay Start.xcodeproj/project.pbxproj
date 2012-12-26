@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3792138168A942400FE4545 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3792137168A942400FE4545 /* Cocoa.framework */; };
+		F3792142168A942400FE4545 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3792140168A942400FE4545 /* InfoPlist.strings */; };
+		F3792144168A942400FE4545 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3792143168A942400FE4545 /* main.m */; };
+		F3792148168A942400FE4545 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F3792146168A942400FE4545 /* Credits.rtf */; };
+		F379214B168A942400FE4545 /* delay_startAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F379214A168A942400FE4545 /* delay_startAppDelegate.m */; };
+		F379214E168A942400FE4545 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F379214C168A942400FE4545 /* MainMenu.xib */; };
+		F3792156168A942400FE4545 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3792155168A942400FE4545 /* SenTestingKit.framework */; };
+		F3792157168A942400FE4545 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3792137168A942400FE4545 /* Cocoa.framework */; };
+		F379215F168A942400FE4545 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F379215D168A942400FE4545 /* InfoPlist.strings */; };
+		F3792162168A942400FE4545 /* Delay_StartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3792161168A942400FE4545 /* Delay_StartTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3792158168A942400FE4545 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F379212A168A942400FE4545 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3792132168A942400FE4545;
+			remoteInfo = "Delay Start";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3792133168A942400FE4545 /* Delay Start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Delay Start.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3792137168A942400FE4545 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F379213A168A942400FE4545 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F379213B168A942400FE4545 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F379213C168A942400FE4545 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F379213F168A942400FE4545 /* Delay Start-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Delay Start-Info.plist"; sourceTree = "<group>"; };
+		F3792141168A942400FE4545 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3792143168A942400FE4545 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3792145168A942400FE4545 /* Delay Start-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Delay Start-Prefix.pch"; sourceTree = "<group>"; };
+		F3792147168A942400FE4545 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F3792149168A942400FE4545 /* delay_startAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = delay_startAppDelegate.h; sourceTree = "<group>"; };
+		F379214A168A942400FE4545 /* delay_startAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = delay_startAppDelegate.m; sourceTree = "<group>"; };
+		F379214D168A942400FE4545 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F3792154168A942400FE4545 /* Delay StartTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Delay StartTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3792155168A942400FE4545 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F379215C168A942400FE4545 /* Delay StartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Delay StartTests-Info.plist"; sourceTree = "<group>"; };
+		F379215E168A942400FE4545 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3792160168A942400FE4545 /* Delay_StartTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Delay_StartTests.h; sourceTree = "<group>"; };
+		F3792161168A942400FE4545 /* Delay_StartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Delay_StartTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3792130168A942400FE4545 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3792138168A942400FE4545 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3792150168A942400FE4545 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3792156168A942400FE4545 /* SenTestingKit.framework in Frameworks */,
+				F3792157168A942400FE4545 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3792128168A942400FE4545 = {
+			isa = PBXGroup;
+			children = (
+				F379213D168A942400FE4545 /* Delay Start */,
+				F379215A168A942400FE4545 /* Delay StartTests */,
+				F3792136168A942400FE4545 /* Frameworks */,
+				F3792134168A942400FE4545 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3792134168A942400FE4545 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3792133168A942400FE4545 /* Delay Start.app */,
+				F3792154168A942400FE4545 /* Delay StartTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3792136168A942400FE4545 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3792137168A942400FE4545 /* Cocoa.framework */,
+				F3792155168A942400FE4545 /* SenTestingKit.framework */,
+				F3792139168A942400FE4545 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3792139168A942400FE4545 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F379213A168A942400FE4545 /* AppKit.framework */,
+				F379213B168A942400FE4545 /* CoreData.framework */,
+				F379213C168A942400FE4545 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F379213D168A942400FE4545 /* Delay Start */ = {
+			isa = PBXGroup;
+			children = (
+				F3792149168A942400FE4545 /* delay_startAppDelegate.h */,
+				F379214A168A942400FE4545 /* delay_startAppDelegate.m */,
+				F379214C168A942400FE4545 /* MainMenu.xib */,
+				F379213E168A942400FE4545 /* Supporting Files */,
+			);
+			path = "Delay Start";
+			sourceTree = "<group>";
+		};
+		F379213E168A942400FE4545 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F379213F168A942400FE4545 /* Delay Start-Info.plist */,
+				F3792140168A942400FE4545 /* InfoPlist.strings */,
+				F3792143168A942400FE4545 /* main.m */,
+				F3792145168A942400FE4545 /* Delay Start-Prefix.pch */,
+				F3792146168A942400FE4545 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F379215A168A942400FE4545 /* Delay StartTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3792160168A942400FE4545 /* Delay_StartTests.h */,
+				F3792161168A942400FE4545 /* Delay_StartTests.m */,
+				F379215B168A942400FE4545 /* Supporting Files */,
+			);
+			path = "Delay StartTests";
+			sourceTree = "<group>";
+		};
+		F379215B168A942400FE4545 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F379215C168A942400FE4545 /* Delay StartTests-Info.plist */,
+				F379215D168A942400FE4545 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3792132168A942400FE4545 /* Delay Start */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3792165168A942400FE4545 /* Build configuration list for PBXNativeTarget "Delay Start" */;
+			buildPhases = (
+				F379212F168A942400FE4545 /* Sources */,
+				F3792130168A942400FE4545 /* Frameworks */,
+				F3792131168A942400FE4545 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Delay Start";
+			productName = "Delay Start";
+			productReference = F3792133168A942400FE4545 /* Delay Start.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3792153168A942400FE4545 /* Delay StartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3792168168A942400FE4545 /* Build configuration list for PBXNativeTarget "Delay StartTests" */;
+			buildPhases = (
+				F379214F168A942400FE4545 /* Sources */,
+				F3792150168A942400FE4545 /* Frameworks */,
+				F3792151168A942400FE4545 /* Resources */,
+				F3792152168A942400FE4545 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3792159168A942400FE4545 /* PBXTargetDependency */,
+			);
+			name = "Delay StartTests";
+			productName = "Delay StartTests";
+			productReference = F3792154168A942400FE4545 /* Delay StartTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F379212A168A942400FE4545 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = "delay-start";
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Joseph Markham";
+			};
+			buildConfigurationList = F379212D168A942400FE4545 /* Build configuration list for PBXProject "Delay Start" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3792128168A942400FE4545;
+			productRefGroup = F3792134168A942400FE4545 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3792132168A942400FE4545 /* Delay Start */,
+				F3792153168A942400FE4545 /* Delay StartTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3792131168A942400FE4545 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3792142168A942400FE4545 /* InfoPlist.strings in Resources */,
+				F3792148168A942400FE4545 /* Credits.rtf in Resources */,
+				F379214E168A942400FE4545 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3792151168A942400FE4545 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F379215F168A942400FE4545 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3792152168A942400FE4545 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F379212F168A942400FE4545 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3792144168A942400FE4545 /* main.m in Sources */,
+				F379214B168A942400FE4545 /* delay_startAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F379214F168A942400FE4545 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3792162168A942400FE4545 /* Delay_StartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3792159168A942400FE4545 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3792132168A942400FE4545 /* Delay Start */;
+			targetProxy = F3792158168A942400FE4545 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3792140168A942400FE4545 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3792141168A942400FE4545 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F3792146168A942400FE4545 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3792147168A942400FE4545 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F379214C168A942400FE4545 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F379214D168A942400FE4545 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F379215D168A942400FE4545 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F379215E168A942400FE4545 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3792163168A942400FE4545 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F3792164168A942400FE4545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F3792166168A942400FE4545 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Delay Start/Delay Start-Prefix.pch";
+				INFOPLIST_FILE = "Delay Start/Delay Start-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F3792167168A942400FE4545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Delay Start/Delay Start-Prefix.pch";
+				INFOPLIST_FILE = "Delay Start/Delay Start-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F3792169168A942400FE4545 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Delay Start.app/Contents/MacOS/Delay Start";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Delay Start/Delay Start-Prefix.pch";
+				INFOPLIST_FILE = "Delay StartTests/Delay StartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F379216A168A942400FE4545 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Delay Start.app/Contents/MacOS/Delay Start";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Delay Start/Delay Start-Prefix.pch";
+				INFOPLIST_FILE = "Delay StartTests/Delay StartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F379212D168A942400FE4545 /* Build configuration list for PBXProject "Delay Start" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3792163168A942400FE4545 /* Debug */,
+				F3792164168A942400FE4545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3792165168A942400FE4545 /* Build configuration list for PBXNativeTarget "Delay Start" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3792166168A942400FE4545 /* Debug */,
+				F3792167168A942400FE4545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F3792168168A942400FE4545 /* Build configuration list for PBXNativeTarget "Delay StartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3792169168A942400FE4545 /* Debug */,
+				F379216A168A942400FE4545 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F379212A168A942400FE4545 /* Project object */;
+}
