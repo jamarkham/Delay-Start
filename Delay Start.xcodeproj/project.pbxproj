@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F375EBB4168CFDEE003668C4 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F375EBB3168CFDEE003668C4 /* Data.plist */; };
 		F3792138168A942400FE4545 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3792137168A942400FE4545 /* Cocoa.framework */; };
 		F3792142168A942400FE4545 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3792140168A942400FE4545 /* InfoPlist.strings */; };
 		F3792144168A942400FE4545 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3792143168A942400FE4545 /* main.m */; };
@@ -17,6 +18,7 @@
 		F3792157168A942400FE4545 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3792137168A942400FE4545 /* Cocoa.framework */; };
 		F379215F168A942400FE4545 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F379215D168A942400FE4545 /* InfoPlist.strings */; };
 		F3792162168A942400FE4545 /* Delay_StartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3792161168A942400FE4545 /* Delay_StartTests.m */; };
+		F3792170168A95F900FE4545 /* delay-start.m in Sources */ = {isa = PBXBuildFile; fileRef = F379216F168A95F900FE4545 /* delay-start.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F375EBB3168CFDEE003668C4 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		F3792133168A942400FE4545 /* Delay Start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Delay Start.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3792137168A942400FE4545 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F379213A168A942400FE4545 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -49,6 +52,8 @@
 		F379215E168A942400FE4545 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F3792160168A942400FE4545 /* Delay_StartTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Delay_StartTests.h; sourceTree = "<group>"; };
 		F3792161168A942400FE4545 /* Delay_StartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Delay_StartTests.m; sourceTree = "<group>"; };
+		F379216E168A95F900FE4545 /* delay-start.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "delay-start.h"; sourceTree = "<group>"; };
+		F379216F168A95F900FE4545 /* delay-start.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "delay-start.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,8 @@
 				F379214A168A942400FE4545 /* delay_startAppDelegate.m */,
 				F379214C168A942400FE4545 /* MainMenu.xib */,
 				F379213E168A942400FE4545 /* Supporting Files */,
+				F379216E168A95F900FE4545 /* delay-start.h */,
+				F379216F168A95F900FE4545 /* delay-start.m */,
 			);
 			path = "Delay Start";
 			sourceTree = "<group>";
@@ -130,6 +137,7 @@
 				F3792143168A942400FE4545 /* main.m */,
 				F3792145168A942400FE4545 /* Delay Start-Prefix.pch */,
 				F3792146168A942400FE4545 /* Credits.rtf */,
+				F375EBB3168CFDEE003668C4 /* Data.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -228,6 +236,7 @@
 				F3792142168A942400FE4545 /* InfoPlist.strings in Resources */,
 				F3792148168A942400FE4545 /* Credits.rtf in Resources */,
 				F379214E168A942400FE4545 /* MainMenu.xib in Resources */,
+				F375EBB4168CFDEE003668C4 /* Data.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +273,7 @@
 			files = (
 				F3792144168A942400FE4545 /* main.m in Sources */,
 				F379214B168A942400FE4545 /* delay_startAppDelegate.m in Sources */,
+				F3792170168A95F900FE4545 /* delay-start.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +457,7 @@
 				F3792167168A942400FE4545 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3792168168A942400FE4545 /* Build configuration list for PBXNativeTarget "Delay StartTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +466,7 @@
 				F379216A168A942400FE4545 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
