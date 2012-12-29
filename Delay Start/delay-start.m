@@ -169,8 +169,7 @@ NSTimer *updateTimer;
         [self.startupApps addObject:[appsToAdd objectAtIndex:i]];
     }
     //[NSTableView reloadData];
-
-    
+    [appListTableView reloadData];
 }
 
 - (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {

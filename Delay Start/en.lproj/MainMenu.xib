@@ -1317,6 +1317,7 @@
 							<string key="NSFrame">{{150, 13}, {82, 32}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="513929509">
@@ -1755,7 +1756,7 @@
 						<reference key="source" ref="1021"/>
 						<reference key="destination" ref="141540193"/>
 					</object>
-					<int key="connectionID">820</int>
+					<int key="connectionID">824</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
@@ -2444,6 +2445,14 @@
 						<reference key="destination" ref="652425037"/>
 					</object>
 					<int key="connectionID">813</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">appListTableView</string>
+						<reference key="source" ref="141540193"/>
+						<reference key="destination" ref="160786327"/>
+					</object>
+					<int key="connectionID">822</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -4549,7 +4558,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">821</int>
+			<int key="maxID">824</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -4579,14 +4588,14 @@
 						</object>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="appListTableView">NSTextView</string>
+						<string key="appListTableView">NSTableView</string>
 						<string key="setTime">NSTextField</string>
 						<string key="updateTime">NSTextField</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="appListTableView">
 							<string key="name">appListTableView</string>
-							<string key="candidateClassName">NSTextView</string>
+							<string key="candidateClassName">NSTableView</string>
 						</object>
 						<object class="IBToOneOutletInfo" key="setTime">
 							<string key="name">setTime</string>
