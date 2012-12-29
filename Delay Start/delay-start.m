@@ -230,6 +230,13 @@ NSTimer *updateTimer;
     
 }
 
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
+{
+    NSLog(@"Quitting...");
+    return YES;
+}
+
+
 - (void)awakeFromNib {
     [setTime setStringValue:[delayTimeValue objectAtIndex:0]];
 }
