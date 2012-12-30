@@ -27,6 +27,8 @@
 - (IBAction)getApps:(id)sender;
 - (IBAction)removeApp:(id)sender;
 
+- (IBAction)menuAbout:(id)sender;
+
 - (void)timerDone:(id)sender;
 - (void)launchy;
 

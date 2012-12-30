@@ -19,7 +19,7 @@ NSTimer *updateTimer;
 - (id)init
 {
    
-    NSLog(@"Hello world");
+    ////NSLog(@"Hello world");
 
     if (self) {
         NSString *errorDesc = nil;
@@ -37,13 +37,13 @@ NSTimer *updateTimer;
                                               format:&format
                                               errorDescription:&errorDesc];
         if (!temp) {
-            NSLog(@"Error reading plist: %@, format: %ld", errorDesc, format);
+            ////NSLog(@"Error reading plist: %@, format: %ld", errorDesc, format);
         }
         self.delayTimeValue = [NSMutableArray arrayWithArray:[temp objectForKey:@"Time"]];
         self.startupApps = [NSMutableArray arrayWithArray:[temp objectForKey:@"Apps"]];
         //[setTime   setStringValue:[delayTimeValue objectAtIndex:0]];
         //[setTime setStringValue:@"xxx"];
-        NSLog(@"%@",[delayTimeValue objectAtIndex:0]);
+        ////NSLog(@"%@",[delayTimeValue objectAtIndex:0]);
         
     }
     
@@ -65,7 +65,7 @@ NSTimer *updateTimer;
 
 - (IBAction)displaySomeText:(id)sender;
 {
-    NSLog(@"displaying log text");
+    ////NSLog(@"displaying log text");
     [updateTimer invalidate];
     [mainTimer invalidate];
     [updateTime setStringValue:@"Cancelled"];
@@ -74,7 +74,7 @@ NSTimer *updateTimer;
 
 
 - (void)timerDone:(id)sender {
-    NSLog(@"timer done");
+    ////NSLog(@"timer done");
     [updateTimer invalidate];
     [updateTime setStringValue:@"Done"];
     [self launchy];
@@ -91,23 +91,23 @@ NSTimer *updateTimer;
 
     dateDiffInt = round(dateDiff);
     dateDescription = [mainFireDate description];
-    NSLog(@"%@",dateDescription);
-    //NSLog(@"time diff = %f",dateDiff);
-    NSLog(@"time diff = %d",dateDiffInt);
+    ////NSLog(@"%@",dateDescription);
+    //////NSLog(@"time diff = %f",dateDiff);
+    ////NSLog(@"time diff = %d",dateDiffInt);
     //sprintf(dateRemaining,"%d", dateDiffInt);
     NSString *dateRemaining = [NSString stringWithFormat:@"%d",dateDiffInt];
     [updateTime setStringValue:dateRemaining];
-    NSLog(@"tick");
+    ////NSLog(@"tick");
     
 }
 
 - (void)launchy  {
-    NSLog(@"launching...");
+    ////NSLog(@"launching...");
     NSInteger i ;
     for (i=0; i< self.startupApps.count; i++) {
         
         //Boolean appResult = [[NSWorkspace sharedWorkspace]launchApplication:@"Calculator"];
-        NSLog(@"%@",[self.startupApps objectAtIndex:i]);
+        ////NSLog(@"%@",[self.startupApps objectAtIndex:i]);
         Boolean appResult = [[NSWorkspace sharedWorkspace]launchApplication:[self.startupApps objectAtIndex:i]];
         if (!appResult) {
             NSAlert *alert = [[NSAlert alloc] init];
@@ -150,14 +150,14 @@ NSTimer *updateTimer;
             //if ([self.startupApps objectAtIndex:j]==[[[fileNames objectAtIndex:i] path] lastPathComponent]) {
                 found = YES;
             }
-            //NSLog(@"i = %d %@  j=%d %@", i, [[[fileNames objectAtIndex:i] path] lastPathComponent], j, [self.startupApps objectAtIndex:j]);
+            //////NSLog(@"i = %d %@  j=%d %@", i, [[[fileNames objectAtIndex:i] path] lastPathComponent], j, [self.startupApps objectAtIndex:j]);
         }
         if (!found) {
             appName = [[[fileNames objectAtIndex:i] path] lastPathComponent];
-            //NSLog(@"checking names %@ %@",appName , [[[fileNames objectAtIndex:i] path] lastPathComponent]);
+            //////NSLog(@"checking names %@ %@",appName , [[[fileNames objectAtIndex:i] path] lastPathComponent]);
             [appsToAdd addObject:appName];
-            //NSLog(@"No Match, adding %@",appName);
-            //NSLog(@"array length is %ld", [appsToAdd count]);
+            //////NSLog(@"No Match, adding %@",appName);
+            //////NSLog(@"array length is %ld", [appsToAdd count]);
         }
     }
     
@@ -165,7 +165,7 @@ NSTimer *updateTimer;
     //add it if not in list
     //////////////////////////////////////
     for (i=0; i<[appsToAdd count]; i++) {
-        NSLog(@"add %@",[appsToAdd objectAtIndex:i]);
+        ////NSLog(@"add %@",[appsToAdd objectAtIndex:i]);
         [self.startupApps addObject:[appsToAdd objectAtIndex:i]];
     }
     //[NSTableView reloadData];
@@ -186,7 +186,7 @@ NSTimer *updateTimer;
         [plistData writeToFile:plistPath atomically:YES];
     }
     else {
-        NSLog(@"%@",error);
+        ////NSLog(@"%@",error);
         //[error release];
     }
     return NSTerminateNow;
@@ -229,8 +229,8 @@ NSTimer *updateTimer;
         for( i = 0; i < [files count]; i++ ) {
             
             // Do something with the filename.
-            //NSLog(@"File path: %@", [[files objectAtIndex:i] path]);
-            //NSLog(@"File %@", [[[files objectAtIndex:i] path] lastPathComponent]);
+            //////NSLog(@"File path: %@", [[files objectAtIndex:i] path]);
+            //////NSLog(@"File %@", [[[files objectAtIndex:i] path] lastPathComponent]);
             [self addNewItemsToAppList:files];
             
         }
@@ -239,9 +239,18 @@ NSTimer *updateTimer;
     
 }
 
+- (IBAction)menuAbout:(id)sender{
+    NSAlert *alert = [[NSAlert alloc] init];
+    [alert addButtonWithTitle:@"OK"];
+    [alert setMessageText:@"Delay Start"];
+    [alert setInformativeText:@"As small a tool as it can be"];
+    [alert setAlertStyle:NSInformationalAlertStyle];
+    [alert runModal];
+}
+
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
 {
-    NSLog(@"Quitting...");
+    ////////NSLog(@"Quitting...");
     return YES;
 }
 

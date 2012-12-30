@@ -19,6 +19,7 @@
 		F379215F168A942400FE4545 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F379215D168A942400FE4545 /* InfoPlist.strings */; };
 		F3792162168A942400FE4545 /* Delay_StartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3792161168A942400FE4545 /* Delay_StartTests.m */; };
 		F3792170168A95F900FE4545 /* delay-start.m in Sources */ = {isa = PBXBuildFile; fileRef = F379216F168A95F900FE4545 /* delay-start.m */; };
+		F3EEC9EA1690002500BC194A /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F3EEC9E91690002500BC194A /* icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		F3792161168A942400FE4545 /* Delay_StartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Delay_StartTests.m; sourceTree = "<group>"; };
 		F379216E168A95F900FE4545 /* delay-start.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "delay-start.h"; sourceTree = "<group>"; };
 		F379216F168A95F900FE4545 /* delay-start.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "delay-start.m"; sourceTree = "<group>"; };
+		F3EEC9E91690002500BC194A /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		F3792128168A942400FE4545 = {
 			isa = PBXGroup;
 			children = (
+				F3EEC9E91690002500BC194A /* icon.icns */,
 				F379213D168A942400FE4545 /* Delay Start */,
 				F379215A168A942400FE4545 /* Delay StartTests */,
 				F3792136168A942400FE4545 /* Frameworks */,
@@ -237,6 +240,7 @@
 				F3792148168A942400FE4545 /* Credits.rtf in Resources */,
 				F379214E168A942400FE4545 /* MainMenu.xib in Resources */,
 				F375EBB4168CFDEE003668C4 /* Data.plist in Resources */,
+				F3EEC9EA1690002500BC194A /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,11 +391,13 @@
 		F3792166168A942400FE4545 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer: Joseph Markham (6JMG23V33R)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Delay Start/Delay Start-Prefix.pch";
 				INFOPLIST_FILE = "Delay Start/Delay Start-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E8001489-F011-4573-B364-B98F5D033E0A";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -399,11 +405,13 @@
 		F3792167168A942400FE4545 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer: Joseph Markham (6JMG23V33R)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Delay Start/Delay Start-Prefix.pch";
 				INFOPLIST_FILE = "Delay Start/Delay Start-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E8001489-F011-4573-B364-B98F5D033E0A";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
