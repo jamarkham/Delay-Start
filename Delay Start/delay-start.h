@@ -25,6 +25,7 @@
 - (IBAction)displaySomeText:(id)sender;
 - (void)addNewItemsToAppList:(NSArray *)files;
 - (IBAction)getApps:(id)sender;
+- (IBAction)removeApp:(id)sender;
 
 - (void)timerDone:(id)sender;
 - (void)launchy;

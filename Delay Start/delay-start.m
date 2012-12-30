@@ -192,6 +192,15 @@ NSTimer *updateTimer;
     return NSTerminateNow;
 }
 
+- (IBAction)removeApp:(id)sender{
+    NSInteger selectedItemIndex = [appListTableView selectedRow];
+    if (selectedItemIndex == -1) {
+        return;
+    }
+    [self.startupApps removeObjectAtIndex:selectedItemIndex];
+    [appListTableView reloadData];
+}
+
 - (IBAction)getApps:(id)sender{
     
     // Loop counter.
