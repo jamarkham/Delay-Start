@@ -201,6 +201,19 @@ NSTimer *updateTimer;
     [appListTableView reloadData];
 }
 
+- (IBAction)updatePreset:(id)sender{
+    NSInteger checkForInt = [[setTime stringValue] integerValue];
+    NSLog(@"%@",[setTime stringValue]);
+    if (checkForInt == 0) {
+        NSLog(@"%li", checkForInt);
+        //change checkForInt to original value, then update the field
+        checkForInt = [[self.delayTimeValue objectAtIndex:0] integerValue];
+        [setTime setStringValue:[self.delayTimeValue objectAtIndex:0]];
+    }
+    
+    [self.delayTimeValue replaceObjectAtIndex:0 withObject:[setTime stringValue]];
+}
+
 - (IBAction)getApps:(id)sender{
     
     // Loop counter.
@@ -258,4 +271,13 @@ NSTimer *updateTimer;
 - (void)awakeFromNib {
     [setTime setStringValue:[delayTimeValue objectAtIndex:0]];
 }
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+    // Insert code here to initialize your application
+
+}
+
+
+
 @end

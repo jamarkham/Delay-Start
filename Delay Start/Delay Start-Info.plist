@@ -32,5 +32,35 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+    <key>CFBundleDevelopmentRegion</key>
+	<string>en-us</string>
+	<key>CFBundleIdentifier</key>
+	<string>Cyberdyne.Delay-Start.help</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Delay-Start</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1</string>
+	<key>CFBundleSignature</key>
+	<string>hbwr</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>HPDBookAccessPath</key>
+	<string>Delay Start.html</string>
+	<key>HPDBookIconPath</key>
+	<string>shrd/icon_16x16.png</string>
+	<key>HPDBookKBProduct</key>
+	<string>Delay-Start1</string>
+	<key>HPDBookTitle</key>
+	<string>Delay Start Help</string>
+	<key>HPDBookType</key>
+	<string>3</string>
+    <key>CFBundleHelpBookFolder</key>
+    <string>pgs</string>
+    <key>CFBundleHelpBookName</key>
+    <string>Delay Start</string>
 </dict>
 </plist>
