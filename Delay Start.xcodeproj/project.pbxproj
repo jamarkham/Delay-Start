@@ -7,17 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F31873E01693DE23004B3443 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F31873D31693DE23004B3443 /* info.plist */; };
-		F31873E11693DE23004B3443 /* Delay Start.html in Resources */ = {isa = PBXBuildFile; fileRef = F31873D51693DE23004B3443 /* Delay Start.html */; };
-		F31873E21693DE23004B3443 /* Help.html in Resources */ = {isa = PBXBuildFile; fileRef = F31873D81693DE23004B3443 /* Help.html */; };
-		F31873E31693DE23004B3443 /* Welcome.html in Resources */ = {isa = PBXBuildFile; fileRef = F31873D91693DE23004B3443 /* Welcome.html */; };
-		F31873E41693DE23004B3443 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = F31873DB1693DE23004B3443 /* default.css */; };
-		F31873E51693DE23004B3443 /* icon_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = F31873DD1693DE23004B3443 /* icon_16x16.png */; };
-		F31873E61693DE23004B3443 /* icon_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = F31873DE1693DE23004B3443 /* icon_32x32.png */; };
-		F31873E71693DE23004B3443 /* ScreenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = F31873DF1693DE23004B3443 /* ScreenShot.png */; };
 		F375EBB4168CFDEE003668C4 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = F375EBB3168CFDEE003668C4 /* Data.plist */; };
 		F3792138168A942400FE4545 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3792137168A942400FE4545 /* Cocoa.framework */; };
-		F3792142168A942400FE4545 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3792140168A942400FE4545 /* InfoPlist.strings */; };
 		F3792144168A942400FE4545 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3792143168A942400FE4545 /* main.m */; };
 		F3792148168A942400FE4545 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F3792146168A942400FE4545 /* Credits.rtf */; };
 		F379214B168A942400FE4545 /* delay_startAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F379214A168A942400FE4545 /* delay_startAppDelegate.m */; };
@@ -27,6 +18,13 @@
 		F379215F168A942400FE4545 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F379215D168A942400FE4545 /* InfoPlist.strings */; };
 		F3792162168A942400FE4545 /* Delay_StartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3792161168A942400FE4545 /* Delay_StartTests.m */; };
 		F3792170168A95F900FE4545 /* delay-start.m in Sources */ = {isa = PBXBuildFile; fileRef = F379216F168A95F900FE4545 /* delay-start.m */; };
+		F3880A6E1698A9690046932F /* Delay Start.html in Resources */ = {isa = PBXBuildFile; fileRef = F3880A631698A9690046932F /* Delay Start.html */; };
+		F3880A6F1698A9690046932F /* icon_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = F3880A641698A9690046932F /* icon_16x16.png */; };
+		F3880A701698A9690046932F /* Help.html in Resources */ = {isa = PBXBuildFile; fileRef = F3880A661698A9690046932F /* Help.html */; };
+		F3880A711698A9690046932F /* Welcome.html in Resources */ = {isa = PBXBuildFile; fileRef = F3880A671698A9690046932F /* Welcome.html */; };
+		F3880A731698A9690046932F /* icon_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = F3880A6A1698A9690046932F /* icon_32x32.png */; };
+		F3880A741698A9690046932F /* ScreenShot.png in Resources */ = {isa = PBXBuildFile; fileRef = F3880A6B1698A9690046932F /* ScreenShot.png */; };
+		F3880A751698A9690046932F /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = F3880A6D1698A9690046932F /* default.css */; };
 		F3EEC9EA1690002500BC194A /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F3EEC9E91690002500BC194A /* icon.icns */; };
 /* End PBXBuildFile section */
 
@@ -41,22 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F31873D31693DE23004B3443 /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = info.plist; path = "../../../../../Desktop/Delay Start.help/Contents/info.plist"; sourceTree = "<group>"; };
-		F31873D61693DE23004B3443 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = English; path = "English.lproj/Delay Start.html"; sourceTree = "<group>"; };
-		F31873D81693DE23004B3443 /* Help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Help.html; sourceTree = "<group>"; };
-		F31873D91693DE23004B3443 /* Welcome.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Welcome.html; sourceTree = "<group>"; };
-		F31873DB1693DE23004B3443 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
-		F31873DD1693DE23004B3443 /* icon_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_16x16.png; sourceTree = "<group>"; };
-		F31873DE1693DE23004B3443 /* icon_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_32x32.png; sourceTree = "<group>"; };
-		F31873DF1693DE23004B3443 /* ScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShot.png; sourceTree = "<group>"; };
 		F375EBB3168CFDEE003668C4 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		F3792133168A942400FE4545 /* Delay Start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Delay Start.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3792137168A942400FE4545 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F379213A168A942400FE4545 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		F379213B168A942400FE4545 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F379213C168A942400FE4545 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F379213F168A942400FE4545 /* Delay Start-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Delay Start-Info.plist"; sourceTree = "<group>"; };
-		F3792141168A942400FE4545 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F3792143168A942400FE4545 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F3792145168A942400FE4545 /* Delay Start-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Delay Start-Prefix.pch"; sourceTree = "<group>"; };
 		F3792147168A942400FE4545 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -71,6 +59,14 @@
 		F3792161168A942400FE4545 /* Delay_StartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Delay_StartTests.m; sourceTree = "<group>"; };
 		F379216E168A95F900FE4545 /* delay-start.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "delay-start.h"; sourceTree = "<group>"; };
 		F379216F168A95F900FE4545 /* delay-start.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "delay-start.m"; sourceTree = "<group>"; };
+		F3880A5E169894D40046932F /* Delay Start-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Delay Start-Info.plist"; sourceTree = "<group>"; };
+		F3880A631698A9690046932F /* Delay Start.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "Delay Start.html"; sourceTree = "<group>"; };
+		F3880A641698A9690046932F /* icon_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_16x16.png; sourceTree = "<group>"; };
+		F3880A661698A9690046932F /* Help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Help.html; sourceTree = "<group>"; };
+		F3880A671698A9690046932F /* Welcome.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Welcome.html; sourceTree = "<group>"; };
+		F3880A6A1698A9690046932F /* icon_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_32x32.png; sourceTree = "<group>"; };
+		F3880A6B1698A9690046932F /* ScreenShot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreenShot.png; sourceTree = "<group>"; };
+		F3880A6D1698A9690046932F /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
 		F3EEC9E91690002500BC194A /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,58 +91,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F31873D41693DE23004B3443 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F31873D51693DE23004B3443 /* Delay Start.html */,
-				F31873D71693DE23004B3443 /* pgs */,
-				F31873DA1693DE23004B3443 /* sty */,
-				F31873DC1693DE23004B3443 /* shrd */,
-			);
-			name = Resources;
-			path = "../../../../../Desktop/Delay Start.help/Contents/Resources";
-			sourceTree = "<group>";
-		};
-		F31873D71693DE23004B3443 /* pgs */ = {
-			isa = PBXGroup;
-			children = (
-				F31873D81693DE23004B3443 /* Help.html */,
-				F31873D91693DE23004B3443 /* Welcome.html */,
-			);
-			name = pgs;
-			path = English.lproj/pgs;
-			sourceTree = "<group>";
-		};
-		F31873DA1693DE23004B3443 /* sty */ = {
-			isa = PBXGroup;
-			children = (
-				F31873DB1693DE23004B3443 /* default.css */,
-			);
-			name = sty;
-			path = English.lproj/sty;
-			sourceTree = "<group>";
-		};
-		F31873DC1693DE23004B3443 /* shrd */ = {
-			isa = PBXGroup;
-			children = (
-				F31873DD1693DE23004B3443 /* icon_16x16.png */,
-				F31873DE1693DE23004B3443 /* icon_32x32.png */,
-				F31873DF1693DE23004B3443 /* ScreenShot.png */,
-			);
-			path = shrd;
-			sourceTree = "<group>";
-		};
-		F348FA671697C531004C0E5B /* Delay Start.help */ = {
-			isa = PBXGroup;
-			children = (
-				F379213E168A942400FE4545 /* Contents */,
-			);
-			name = "Delay Start.help";
-			sourceTree = "<group>";
-		};
 		F3792128168A942400FE4545 = {
 			isa = PBXGroup;
 			children = (
+				F3880A601698A90E0046932F /* Resources */,
 				F3EEC9E91690002500BC194A /* icon.icns */,
 				F379213D168A942400FE4545 /* Delay Start */,
 				F379215A168A942400FE4545 /* Delay StartTests */,
@@ -187,29 +135,18 @@
 		F379213D168A942400FE4545 /* Delay Start */ = {
 			isa = PBXGroup;
 			children = (
+				F3880A5E169894D40046932F /* Delay Start-Info.plist */,
+				F3792143168A942400FE4545 /* main.m */,
+				F3792145168A942400FE4545 /* Delay Start-Prefix.pch */,
+				F3792146168A942400FE4545 /* Credits.rtf */,
 				F375EBB3168CFDEE003668C4 /* Data.plist */,
 				F3792149168A942400FE4545 /* delay_startAppDelegate.h */,
 				F379214A168A942400FE4545 /* delay_startAppDelegate.m */,
 				F379214C168A942400FE4545 /* MainMenu.xib */,
 				F379216E168A95F900FE4545 /* delay-start.h */,
 				F379216F168A95F900FE4545 /* delay-start.m */,
-				F348FA671697C531004C0E5B /* Delay Start.help */,
 			);
 			path = "Delay Start";
-			sourceTree = "<group>";
-		};
-		F379213E168A942400FE4545 /* Contents */ = {
-			isa = PBXGroup;
-			children = (
-				F31873D31693DE23004B3443 /* info.plist */,
-				F31873D41693DE23004B3443 /* Resources */,
-				F379213F168A942400FE4545 /* Delay Start-Info.plist */,
-				F3792140168A942400FE4545 /* InfoPlist.strings */,
-				F3792143168A942400FE4545 /* main.m */,
-				F3792145168A942400FE4545 /* Delay Start-Prefix.pch */,
-				F3792146168A942400FE4545 /* Credits.rtf */,
-			);
-			name = Contents;
 			sourceTree = "<group>";
 		};
 		F379215A168A942400FE4545 /* Delay StartTests */ = {
@@ -229,6 +166,60 @@
 				F379215D168A942400FE4545 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3880A601698A90E0046932F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F3880A611698A9460046932F /* English.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F3880A611698A9460046932F /* English.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				F3880A621698A9690046932F /* Delay Start help */,
+			);
+			name = English.lproj;
+			sourceTree = "<group>";
+		};
+		F3880A621698A9690046932F /* Delay Start help */ = {
+			isa = PBXGroup;
+			children = (
+				F3880A631698A9690046932F /* Delay Start.html */,
+				F3880A641698A9690046932F /* icon_16x16.png */,
+				F3880A651698A9690046932F /* pgs */,
+				F3880A681698A9690046932F /* shrd */,
+				F3880A6C1698A9690046932F /* sty */,
+			);
+			path = "Delay Start help";
+			sourceTree = "<group>";
+		};
+		F3880A651698A9690046932F /* pgs */ = {
+			isa = PBXGroup;
+			children = (
+				F3880A661698A9690046932F /* Help.html */,
+				F3880A671698A9690046932F /* Welcome.html */,
+			);
+			path = pgs;
+			sourceTree = "<group>";
+		};
+		F3880A681698A9690046932F /* shrd */ = {
+			isa = PBXGroup;
+			children = (
+				F3880A6A1698A9690046932F /* icon_32x32.png */,
+				F3880A6B1698A9690046932F /* ScreenShot.png */,
+			);
+			path = shrd;
+			sourceTree = "<group>";
+		};
+		F3880A6C1698A9690046932F /* sty */ = {
+			isa = PBXGroup;
+			children = (
+				F3880A6D1698A9690046932F /* default.css */,
+			);
+			path = sty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,19 +295,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3792142168A942400FE4545 /* InfoPlist.strings in Resources */,
 				F3792148168A942400FE4545 /* Credits.rtf in Resources */,
 				F379214E168A942400FE4545 /* MainMenu.xib in Resources */,
 				F375EBB4168CFDEE003668C4 /* Data.plist in Resources */,
 				F3EEC9EA1690002500BC194A /* icon.icns in Resources */,
-				F31873E01693DE23004B3443 /* info.plist in Resources */,
-				F31873E11693DE23004B3443 /* Delay Start.html in Resources */,
-				F31873E21693DE23004B3443 /* Help.html in Resources */,
-				F31873E31693DE23004B3443 /* Welcome.html in Resources */,
-				F31873E41693DE23004B3443 /* default.css in Resources */,
-				F31873E51693DE23004B3443 /* icon_16x16.png in Resources */,
-				F31873E61693DE23004B3443 /* icon_32x32.png in Resources */,
-				F31873E71693DE23004B3443 /* ScreenShot.png in Resources */,
+				F3880A6E1698A9690046932F /* Delay Start.html in Resources */,
+				F3880A6F1698A9690046932F /* icon_16x16.png in Resources */,
+				F3880A701698A9690046932F /* Help.html in Resources */,
+				F3880A711698A9690046932F /* Welcome.html in Resources */,
+				F3880A731698A9690046932F /* icon_32x32.png in Resources */,
+				F3880A741698A9690046932F /* ScreenShot.png in Resources */,
+				F3880A751698A9690046932F /* default.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,22 +365,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F31873D51693DE23004B3443 /* Delay Start.html */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F31873D61693DE23004B3443 /* English */,
-			);
-			name = "Delay Start.html";
-			sourceTree = "<group>";
-		};
-		F3792140168A942400FE4545 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3792141168A942400FE4545 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		F3792146168A942400FE4545 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (

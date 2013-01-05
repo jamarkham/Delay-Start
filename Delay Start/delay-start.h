@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface delay_start : NSObject{
     IBOutlet NSTextField *updateTime;
     IBOutlet NSTextField *setTime;
@@ -34,6 +35,7 @@
 - (void)launchy;
 
 
+- (IBAction)displayTheHelp:(id)sender;
 
 
 @end

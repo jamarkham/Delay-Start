@@ -1,0 +1,9 @@
+body{ background-color: white;}
+body { font: 12pt "Lucida Grande";} 
+h1 { font: bold 22pt "Lucida Grande";} 
+
+img.header {
+float:left;
+clear:right;
+margin-right:20px;
+}

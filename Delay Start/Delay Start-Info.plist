@@ -3,39 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>en-us</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleHelpBookFolder</key>
+	<string>Delay Start Help</string>
+	<key>CFBundleHelpBookName</key>
+	<string>Delay Start Help</string>
 	<key>CFBundleIconFile</key>
 	<string>icon</string>
 	<key>CFBundleIdentifier</key>
-	<string>Cyberdyne.${PRODUCT_NAME:rfc1034identifier}</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>1</string>
-	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.utilities</string>
-	<key>LSMinimumSystemVersion</key>
-	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2012 Joseph Markham. All rights reserved.</string>
-	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
-	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
-    <key>CFBundleDevelopmentRegion</key>
-	<string>en-us</string>
-	<key>CFBundleIdentifier</key>
-	<string>Cyberdyne.Delay-Start.help</string>
+	<string>com.Cyberdyne.Delay-Start</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -48,19 +26,15 @@
 	<string>hbwr</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
-	<key>HPDBookAccessPath</key>
-	<string>Delay Start.html</string>
-	<key>HPDBookIconPath</key>
-	<string>shrd/icon_16x16.png</string>
-	<key>HPDBookKBProduct</key>
-	<string>Delay-Start1</string>
-	<key>HPDBookTitle</key>
-	<string>Delay Start Help</string>
-	<key>HPDBookType</key>
-	<string>3</string>
-    <key>CFBundleHelpBookFolder</key>
-    <string>pgs</string>
-    <key>CFBundleHelpBookName</key>
-    <string>Delay Start</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2012 Joseph Markham. All rights reserved.</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
 </dict>
 </plist>

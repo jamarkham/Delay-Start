@@ -7,6 +7,7 @@
 //
 
 #import "delay-start.h"
+
 NSTimer *mainTimer;
 NSTimer *updateTimer;
 
@@ -278,6 +279,14 @@ NSTimer *updateTimer;
 
 }
 
-
+- (IBAction)displayTheHelp:(id)sender{
+    NSLog(@"Trying to display help");
+    
+    NSURL* url = [[NSBundle mainBundle] URLForResource:@"Delay Start" withExtension:@"html"];
+    BOOL result =  [[NSWorkspace sharedWorkspace] openURL:(url)];
+    
+    url = [[NSBundle mainBundle] URLForResource:@"icon_32x32" withExtension:@"png"];
+    NSLog(@"%@",url);
+}
 
 @end
