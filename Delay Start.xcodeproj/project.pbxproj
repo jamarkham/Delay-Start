@@ -187,6 +187,7 @@
 		F379213D168A942400FE4545 /* Delay Start */ = {
 			isa = PBXGroup;
 			children = (
+				F375EBB3168CFDEE003668C4 /* Data.plist */,
 				F3792149168A942400FE4545 /* delay_startAppDelegate.h */,
 				F379214A168A942400FE4545 /* delay_startAppDelegate.m */,
 				F379214C168A942400FE4545 /* MainMenu.xib */,
@@ -207,7 +208,6 @@
 				F3792143168A942400FE4545 /* main.m */,
 				F3792145168A942400FE4545 /* Delay Start-Prefix.pch */,
 				F3792146168A942400FE4545 /* Credits.rtf */,
-				F375EBB3168CFDEE003668C4 /* Data.plist */,
 			);
 			name = Contents;
 			sourceTree = "<group>";

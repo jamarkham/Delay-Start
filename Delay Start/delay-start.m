@@ -203,9 +203,9 @@ NSTimer *updateTimer;
 
 - (IBAction)updatePreset:(id)sender{
     NSInteger checkForInt = [[setTime stringValue] integerValue];
-    NSLog(@"%@",[setTime stringValue]);
+    //NSLog(@"%@",[setTime stringValue]);
     if (checkForInt == 0) {
-        NSLog(@"%li", checkForInt);
+        //NSLog(@"%li", checkForInt);
         //change checkForInt to original value, then update the field
         checkForInt = [[self.delayTimeValue objectAtIndex:0] integerValue];
         [setTime setStringValue:[self.delayTimeValue objectAtIndex:0]];
