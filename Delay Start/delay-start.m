@@ -127,6 +127,13 @@ NSTimer *updateTimer;
             //[alert release];
         }
     }
+    //kill the app here if the checkbox is set
+    NSInteger shouldQuit = [quitStart state];
+    if (shouldQuit == 1) {
+        [NSApp terminate:self];
+    }
+    
+    
 }
 
 
