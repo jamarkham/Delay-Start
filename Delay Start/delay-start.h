@@ -13,23 +13,29 @@
     IBOutlet NSTextField *updateTime;
     IBOutlet NSTextField *setTime;
     IBOutlet NSTableView *appListTableView;
+    IBOutlet NSButton *quitStart;
+    
     
     NSMutableArray *delayTimeValue;
     NSMutableArray *startupApps;
+    NSMutableArray *quitAfterStartup;
     
 }
 
 
 @property  (retain, nonatomic) NSMutableArray *delayTimeValue;
 @property  (retain, nonatomic) NSMutableArray *startupApps;
+@property  (retain, nonatomic) NSMutableArray *quitAfterStartup;
 
 - (IBAction)displaySomeText:(id)sender;
+- (IBAction)launchNow:(id)sender;
 - (void)addNewItemsToAppList:(NSArray *)files;
 - (IBAction)getApps:(id)sender;
 - (IBAction)removeApp:(id)sender;
 
 - (IBAction)menuAbout:(id)sender;
 - (IBAction)updatePreset:(id)sender;
+- (IBAction)updateQuitStart:(id)sender;
 
 - (void)timerDone:(id)sender;
 - (void)launchy;

@@ -13,13 +13,13 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
-    NSLog(@"Starting...");
+    //NSLog(@"Starting...");
     
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender
 {
-    NSLog(@"Quitting...");
+    //NSLog(@"Quitting...");
     return YES;
 }
 

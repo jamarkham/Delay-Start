@@ -16,6 +16,7 @@ NSTimer *updateTimer;
 
 @synthesize delayTimeValue;
 @synthesize startupApps;
+@synthesize quitAfterStartup;
 
 - (id)init
 {
@@ -42,6 +43,8 @@ NSTimer *updateTimer;
         }
         self.delayTimeValue = [NSMutableArray arrayWithArray:[temp objectForKey:@"Time"]];
         self.startupApps = [NSMutableArray arrayWithArray:[temp objectForKey:@"Apps"]];
+        self.quitAfterStartup = [NSMutableArray arrayWithArray:[temp objectForKey:@"Quit"]];
+
         //[setTime   setStringValue:[delayTimeValue objectAtIndex:0]];
         //[setTime setStringValue:@"xxx"];
         ////NSLog(@"%@",[delayTimeValue objectAtIndex:0]);
@@ -73,6 +76,11 @@ NSTimer *updateTimer;
     
 }
 
+- (IBAction)launchNow:(id)sender;
+{
+    NSLog(@"launchNow clicked");
+    [self launchy];
+}
 
 - (void)timerDone:(id)sender {
     ////NSLog(@"timer done");
@@ -178,8 +186,8 @@ NSTimer *updateTimer;
     NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     NSString *plistPath = [rootPath stringByAppendingPathComponent:@"Data.plist"];
     NSDictionary *plistDict = [NSDictionary dictionaryWithObjects:
-                               [NSArray arrayWithObjects: delayTimeValue, startupApps, nil]
-                                                          forKeys:[NSArray arrayWithObjects: @"Time", @"Apps", nil]];
+                               [NSArray arrayWithObjects: delayTimeValue, startupApps, quitAfterStartup, nil]
+                                                          forKeys:[NSArray arrayWithObjects: @"Time", @"Apps", @"Quit", nil]];
     NSData *plistData = [NSPropertyListSerialization dataFromPropertyList:plistDict
                                                                    format:NSPropertyListXMLFormat_v1_0
                                                          errorDescription:&error];
@@ -213,6 +221,16 @@ NSTimer *updateTimer;
     }
     
     [self.delayTimeValue replaceObjectAtIndex:0 withObject:[setTime stringValue]];
+}
+
+- (IBAction)updateQuitStart:(id)sender{
+    NSLog(@"Updating the checkbox");
+    NSLog(@"state %ld", (long)[sender state]);
+    NSNumber *updateValue = [[NSNumber alloc] initWithLong:[sender state]];
+    //NSInteger updateValue = [sender state];
+    //NSInteger *updateValue = [[NSInteger alloc] init];
+    [self.quitAfterStartup replaceObjectAtIndex:0 withObject:updateValue];
+    
 }
 
 - (IBAction)getApps:(id)sender{
@@ -271,6 +289,11 @@ NSTimer *updateTimer;
 
 - (void)awakeFromNib {
     [setTime setStringValue:[delayTimeValue objectAtIndex:0]];
+    //[quitStart setState:[quitAfterStartup objectAtIndex:0]];
+    NSNumber *updateValue = [quitAfterStartup objectAtIndex:0];
+    NSInteger updateValueNumber = [updateValue integerValue];
+    NSLog(@"initializing the checkbox %li",(long)updateValueNumber);
+    [quitStart setState:updateValueNumber];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -280,13 +303,13 @@ NSTimer *updateTimer;
 }
 
 - (IBAction)displayTheHelp:(id)sender{
-    NSLog(@"Trying to display help");
+    //NSLog(@"Trying to display help");
     
     NSURL* url = [[NSBundle mainBundle] URLForResource:@"Delay Start" withExtension:@"html"];
     BOOL result =  [[NSWorkspace sharedWorkspace] openURL:(url)];
     
     url = [[NSBundle mainBundle] URLForResource:@"icon_32x32" withExtension:@"png"];
-    NSLog(@"%@",url);
+    //NSLog(@"%@",url);
 }
 
 @end
