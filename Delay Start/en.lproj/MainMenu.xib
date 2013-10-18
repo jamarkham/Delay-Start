@@ -509,6 +509,9 @@ Gw
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="bumpUp:" target="536" id="8QP-eS-y0G"/>
+                        </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KdB-4x-MeE">
                         <rect key="frame" x="138" y="86" width="24" height="26"/>
@@ -517,6 +520,9 @@ Gw
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="bumpDown:" target="536" id="TSe-vU-EQN"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

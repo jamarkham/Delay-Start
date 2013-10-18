@@ -76,6 +76,32 @@ NSTimer *updateTimer;
     
 }
 
+- (IBAction)bumpUp:(id)sender;
+{
+    NSInteger selectedItemIndex = [appListTableView selectedRow];
+    if (selectedItemIndex < 1) {
+        return;
+    }
+    NSLog(@"bump up %li",(long)selectedItemIndex);
+    NSLog(@"items %li", self.startupApps.count);
+    [startupApps exchangeObjectAtIndex:selectedItemIndex withObjectAtIndex:(selectedItemIndex -1)];
+    [appListTableView reloadData];
+}
+
+
+
+- (IBAction)bumpDown:(id)sender;
+{
+    NSInteger selectedItemIndex = [appListTableView selectedRow];
+    if ((selectedItemIndex == -1) || (selectedItemIndex > (self.startupApps.count - 2))) {
+        return;
+    }
+    NSLog(@"bump down %li",(long)selectedItemIndex);
+    [startupApps exchangeObjectAtIndex:selectedItemIndex withObjectAtIndex:(selectedItemIndex +1)];
+    [appListTableView reloadData];
+}
+
+
 - (IBAction)launchNow:(id)sender;
 {
     NSLog(@"launchNow clicked");

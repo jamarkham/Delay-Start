@@ -36,6 +36,8 @@
 - (IBAction)menuAbout:(id)sender;
 - (IBAction)updatePreset:(id)sender;
 - (IBAction)updateQuitStart:(id)sender;
+- (IBAction)bumpUp:(id)sender;
+- (IBAction)bumpDown:(id)sender;
 
 - (void)timerDone:(id)sender;
 - (void)launchy;
