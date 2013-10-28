@@ -6,6 +6,13 @@
 //  Copyright (c) 2012 Joseph Markham. All rights reserved.
 //
 
+// Feature list
+// willNotBeDone have delay-start launch an AppleScript (not actually possible)
+// TODO Delay-Start does not launch Dropbox or Path Finder
+// done a “Launch Now” button to skip the timer
+// done say which app failed to launch
+//
+
 #import "delay-start.h"
 
 NSTimer *mainTimer;
@@ -139,15 +146,19 @@ NSTimer *updateTimer;
 - (void)launchy  {
     ////NSLog(@"launching...");
     NSInteger i ;
+    NSString *app;
+    NSString *errorMessage;
     for (i=0; i< self.startupApps.count; i++) {
         
         //Boolean appResult = [[NSWorkspace sharedWorkspace]launchApplication:@"Calculator"];
-        ////NSLog(@"%@",[self.startupApps objectAtIndex:i]);
+        //NSLog(@"%@",[self.startupApps objectAtIndex:i]);
+        app =  [self.startupApps objectAtIndex:i];
         Boolean appResult = [[NSWorkspace sharedWorkspace]launchApplication:[self.startupApps objectAtIndex:i]];
         if (!appResult) {
+            errorMessage = [@"Failed to launch " stringByAppendingString:app];
             NSAlert *alert = [[NSAlert alloc] init];
             [alert addButtonWithTitle:@"OK"];
-            [alert setMessageText:@"Failed to launch the app"];
+            [alert setMessageText:errorMessage ];
             [alert setAlertStyle:NSWarningAlertStyle];
             [alert runModal];
             //[alert release];
