@@ -277,6 +277,36 @@ NSTimer *updateTimer;
     
 }
 
+- (IBAction)addDelay:(id)sender{
+    [self input:@"test" defaultValue:@"default"];
+}
+
+
+
+- (NSString *)input: (NSString *)prompt defaultValue: (NSString *)defaultValue {
+    NSAlert *alert = [NSAlert alertWithMessageText: prompt
+                                     defaultButton:@"OK"
+                                   alternateButton:@"Cancel"
+                                       otherButton:nil
+                         informativeTextWithFormat:@""];
+    
+    NSTextField *input = [[NSTextField alloc] initWithFrame:NSMakeRect(0, 0, 200, 24)];
+    [input setStringValue:defaultValue];
+    //[input autorelease];
+    [alert setAccessoryView:input];
+    NSInteger button = [alert runModal];
+    if (button == NSAlertDefaultReturn) {
+        [input validateEditing];
+        return [input stringValue];
+    } else if (button == NSAlertAlternateReturn) {
+        return nil;
+    } else {
+        NSAssert1(NO, @"Invalid input dialog button %li", (long)button);
+        return nil;
+    }
+}
+
+
 - (IBAction)getApps:(id)sender{
     
     // Loop counter.

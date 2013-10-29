@@ -39,6 +39,8 @@
 - (IBAction)bumpUp:(id)sender;
 - (IBAction)bumpDown:(id)sender;
 
+- (IBAction)addDelay:(id)sender;
+
 - (void)timerDone:(id)sender;
 - (void)launchy;
 
