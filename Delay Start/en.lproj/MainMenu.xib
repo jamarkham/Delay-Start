@@ -377,7 +377,7 @@ Gw
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="647">
+                    <button toolTip="Add item" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="647">
                         <rect key="frame" x="70" y="86" width="24" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <constraints>
@@ -542,6 +542,9 @@ Gw
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="removeDelay:" target="536" id="L5S-4C-D60"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>

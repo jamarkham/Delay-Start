@@ -278,9 +278,20 @@ NSTimer *updateTimer;
 }
 
 - (IBAction)addDelay:(id)sender{
-    [self input:@"test" defaultValue:@"default"];
+    NSString *delayTime = [self input:@"add test" defaultValue:@"default"];
+    NSUInteger *intTime;
+    NSLog(@"Delay the item %@", delayTime);
+    if (stringIsNumeric(delayTime)) {
+        intTime = [delayTime intValue];
+    } else {
+        intTime = 0;
+    }
+    NSLog(@"delay time %li", (long)intTime);
 }
 
+- (IBAction)removeDelay:(id)sender{----
+    [self input:@"remove test" defaultValue:@"default"];
+}
 
 
 - (NSString *)input: (NSString *)prompt defaultValue: (NSString *)defaultValue {
@@ -304,6 +315,13 @@ NSTimer *updateTimer;
         NSAssert1(NO, @"Invalid input dialog button %li", (long)button);
         return nil;
     }
+}
+
+BOOL stringIsNumeric(NSString *str) {
+    NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+    NSNumber *number = [formatter numberFromString:str];
+    //[formatter release];
+    return !!number; // If the string is not numeric, number will be nil
 }
 
 
