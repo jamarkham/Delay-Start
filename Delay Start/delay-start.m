@@ -289,7 +289,7 @@ NSTimer *updateTimer;
     NSLog(@"delay time %li", (long)intTime);
 }
 
-- (IBAction)removeDelay:(id)sender{----
+- (IBAction)removeDelay:(id)sender{
     [self input:@"remove test" defaultValue:@"default"];
 }
 
