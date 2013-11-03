@@ -195,13 +195,20 @@ NSTimer *updateTimer;
     //NSMutableArray *appsToAdd;
     NSMutableArray *appsToAdd = [[NSMutableArray alloc] initWithCapacity:100];
     NSString *appName;
+    NSString *delayTest;
     BOOL found;
     for (i=0; i<[fileNames count]; i++) {
         found = NO;
+        delayTest = [[fileNames objectAtIndex:i] substringToIndex:2];
+        NSLog(delayTest);
         for (j=0; j<self.startupApps.count; j++) {
+        //TODO fix path for delay timers
             if ([[self.startupApps objectAtIndex:j] isEqualToString:[[[fileNames objectAtIndex:i] path] lastPathComponent]]) {
             //if ([self.startupApps objectAtIndex:j]==[[[fileNames objectAtIndex:i] path] lastPathComponent]) {
-                found = YES;
+                if (![delayTest isEqualToString:@"--"]) {
+                    found = YES;
+                }
+                
             }
             //////NSLog(@"i = %d %@  j=%d %@", i, [[[fileNames objectAtIndex:i] path] lastPathComponent], j, [self.startupApps objectAtIndex:j]);
         }
@@ -279,10 +286,19 @@ NSTimer *updateTimer;
 
 - (IBAction)addDelay:(id)sender{
     NSString *delayTime = [self input:@"add test" defaultValue:@"default"];
-    NSUInteger *intTime;
+    NSInteger *intTime;
+    NSArray *files;
+    NSString *tempString;
+    
     NSLog(@"Delay the item %@", delayTime);
     if (stringIsNumeric(delayTime)) {
         intTime = [delayTime intValue];
+        tempString = [NSString stringWithFormat:@"--delay %li seconds", (long)intTime];
+        NSLog(tempString);
+        //[files addObject: tempString];
+        files = [NSArray arrayWithObjects:tempString, nil];
+
+        [self addNewItemsToAppList:files];
     } else {
         intTime = 0;
     }
