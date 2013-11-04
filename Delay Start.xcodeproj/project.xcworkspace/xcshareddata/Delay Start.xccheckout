@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>CA02A386-7F43-46FD-A092-A5EE725D922A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Delay Start</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DFCC4590-92D4-4AB0-AE14-1012434FEFBE</key>
+		<string>https://github.com/jamarkham/Delay-Start.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Delay Start.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DFCC4590-92D4-4AB0-AE14-1012434FEFBE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jamarkham/Delay-Start.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DFCC4590-92D4-4AB0-AE14-1012434FEFBE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DFCC4590-92D4-4AB0-AE14-1012434FEFBE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Delay Start</string>
+		</dict>
+	</array>
+</dict>
+</plist>
