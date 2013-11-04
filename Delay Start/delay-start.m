@@ -201,19 +201,22 @@ NSTimer *updateTimer;
         found = NO;
         delayTest = [[fileNames objectAtIndex:i] substringToIndex:2];
         NSLog(delayTest);
-        for (j=0; j<self.startupApps.count; j++) {
-        //TODO fix path for delay timers
-            if ([[self.startupApps objectAtIndex:j] isEqualToString:[[[fileNames objectAtIndex:i] path] lastPathComponent]]) {
-            //if ([self.startupApps objectAtIndex:j]==[[[fileNames objectAtIndex:i] path] lastPathComponent]) {
-                if (![delayTest isEqualToString:@"--"]) {
+        if (![delayTest isEqualToString:@"--"]) {
+            for (j=0; j<self.startupApps.count; j++) {
+                //TODO fix path for delay timers
+                if ([[self.startupApps objectAtIndex:j] isEqualToString:[[[fileNames objectAtIndex:i] path] lastPathComponent]]) {
+                    //if ([self.startupApps objectAtIndex:j]==[[[fileNames objectAtIndex:i] path] lastPathComponent]) {
                     found = YES;
                 }
-                
+                //////NSLog(@"i = %d %@  j=%d %@", i, [[[fileNames objectAtIndex:i] path] lastPathComponent], j, [self.startupApps objectAtIndex:j]);
             }
-            //////NSLog(@"i = %d %@  j=%d %@", i, [[[fileNames objectAtIndex:i] path] lastPathComponent], j, [self.startupApps objectAtIndex:j]);
         }
         if (!found) {
-            appName = [[[fileNames objectAtIndex:i] path] lastPathComponent];
+            if (![delayTest isEqualToString:@"--"]) {
+                appName = [[[fileNames objectAtIndex:i] path] lastPathComponent];
+            }else{
+                appName = [fileNames objectAtIndex:i];
+            }
             //////NSLog(@"checking names %@ %@",appName , [[[fileNames objectAtIndex:i] path] lastPathComponent]);
             [appsToAdd addObject:appName];
             //////NSLog(@"No Match, adding %@",appName);
@@ -305,9 +308,7 @@ NSTimer *updateTimer;
     NSLog(@"delay time %li", (long)intTime);
 }
 
-- (IBAction)removeDelay:(id)sender{
-    [self input:@"remove test" defaultValue:@"default"];
-}
+
 
 
 - (NSString *)input: (NSString *)prompt defaultValue: (NSString *)defaultValue {
